@@ -70,7 +70,7 @@ button[type=submit]:hover {
 	color: #fff;
 }
 
-/*** HEADER SECTION ***/
+/***** HEADER SECTION *****/
 
 h1 {
 	font-size: 400%;
@@ -97,21 +97,6 @@ h2 {
 
 .header-text-box {
 	margin-bottom: 80px;
-}
-
-/***** BANNER INDEX *****/
-
-.banner-section {
-	background-image: -webkit-linear-gradient(rgba(0, 0, 0, .3), rgb(0, 0, 0, .1)), url(../imgs/bgAtintas.png);
-	background-image: linear-gradient(rgba(0, 0, 0, .3), rgb(0, 0, 0, .1)), url(../imgs/bgAtintas.png);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-	position: relative;
-}
-
-.fa-whatsapp {
-	margin-left: 8px;
 }
 
 /***** NAVIGATION *****/
@@ -159,7 +144,9 @@ nav {
 	float: left;
 	margin-top: 0px;
 	margin-left: 40px;
-}
+}*/
+
+/***** STICKY NAV *****/
 
 .sticky-nav {
 	top: 0;
@@ -190,6 +177,157 @@ nav {
 	float: left;
 	margin-top: 0px;
 	margin-left: 40px;
+}
+
+
+
+
+
+
+/*
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.header {
+	background-color: #fff;
+	box-shadow: #808080;
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+.logo {
+	display: inline-block;
+	color: #000;
+	font-size: 60px;
+	margin-left: 10px;
+	height: 70px;
+}
+
+.nav {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: blue;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height .5 ease-out;
+}
+
+.menu a {
+	display: block;
+	padding: 30px;
+	color: #000;
+}
+
+.menu a:hover {
+	background-color: aqua;
+}
+
+.hamb {
+	cursor: pointer;
+	float: right;
+	padding: 40px 20px;
+}
+
+.hamb-line {
+	background: #000;
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+	background: #000;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+.hamb-line::before {
+	top: 5px;
+}
+
+.hamb-line::after {
+	top: -5px;
+}
+
+.side-menu {
+	display: none;
+}
+
+.side-menu:checked ~ nav {
+	max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+	background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+	transform: rotate(45deg);
+	top: 0;
+}
+
+@media (min-width: 768px) {
+	.nav {
+		max-height: none;
+		top: 0;
+		position: relative;
+		float: right;
+		width: fit-content;
+		background-color: transparent;
+	}
+
+	.menu li {
+		float: left;
+	}
+
+	.menu a:hover {
+		background-color: transparent;
+		color: #4183da;
+	}
+
+	.hamb {
+		display: none;
+	}
+}
+*/
+
+
+
+
+
+
+
+/***** BANNER INDEX *****/
+
+.banner-section {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, .3), rgb(0, 0, 0, .1)), url(../imgs/bgAtintas.png);
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgb(0, 0, 0, .1)), url(../imgs/bgAtintas.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.fa-whatsapp {
+	margin-left: 8px;
 }
 
 /***** ABOUT SECTION *****/
@@ -260,6 +398,7 @@ nav {
 .work-section {
 	text-align: center;
 	background-color: whitesmoke;
+	padding-bottom: 100px;
 }
 
 .work-portfolio {
@@ -306,7 +445,7 @@ nav {
 .services-section {
 	text-align: center;
 	background-color: whitesmoke;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 }
 
 .service-box {
@@ -342,7 +481,7 @@ nav {
 
 .partners-section {
 	text-align: center;
-	padding-bottom: 140px;
+	padding-bottom: 200px;
 }
 
 .partner-logo {
@@ -352,6 +491,7 @@ nav {
 
 .list-image {
 	display: flex;
+	margin-top: 50px;
 }
 
 /***** TESTIMONIALS SECTION *****/
@@ -363,7 +503,7 @@ nav {
 	background-attachment: fixed;
 	text-align: center;
 	color: #fff;
-	padding-bottom: 120px;
+	padding-bottom: 150px;
 }
 
 .testimonial-heading {
@@ -411,7 +551,7 @@ cite img {
 
 .contact-section {
 	text-align: center;
-	padding-bottom: 80px;
+	padding-bottom: 150px;
 }
 
 .contact-heading {
@@ -535,8 +675,8 @@ footer {
 
 footer .copyright .content {
 	border-top: 1px solid #eeeeee49;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-top: 30px;
 }
 
